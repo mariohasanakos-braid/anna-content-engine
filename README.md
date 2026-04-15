@@ -28,31 +28,40 @@ Everything flows through Slack. No SMS. No dashboard. No new app for Dilani to l
 
 Tier 1 (this repo's current scope):
 - [x] Repo scaffolding
-- [ ] Channel plan + scope docs
-- [ ] Brief generator (Claude API + content calendar)
-- [ ] Slack poster for daily brief
-- [ ] Upload watcher
-- [ ] Clip processor
-- [ ] Output poster + emoji-reaction approval
-- [ ] Schedule stub
-- [ ] Runbook + demo
+- [x] Channel plan + scope docs
+- [x] Brief generator (Claude API + calendar; template fallback when no key)
+- [x] Slack poster for daily brief (mock + real modes)
+- [x] Upload watcher (polls thread, downloads clips, auto-detects clip_id)
+- [x] Clip processor (ffmpeg reframe + optional whisper captions → 4 platform outputs)
+- [x] Output poster + emoji-reaction approval flow
+- [x] Schedule stub (writes schedule.json with staggered platform times)
+- [x] Runbook + end-to-end mock demo (`tests/e2e_mock.py`)
 
 Tier 2 (post-MVP):
 - [ ] Real platform posting (Buffer/Metricool API)
 - [ ] Comment triage + reply drafts
 - [ ] Performance feedback loop (posts → briefs)
+- [ ] Remotion b-roll splicing for agent-demo clips
 
-## Quick start
+## Quick start (zero keys needed)
 
 ```bash
-cp .env.example .env       # fill in SLACK_BOT_TOKEN, ANTHROPIC_API_KEY
 pip install -r requirements.txt
-python bin/generate-brief.py --date tomorrow
-python bin/post-brief.py --date tomorrow
+
+# Generate a sample video for the mock upload
+mkdir -p /tmp/ace-test
+ffmpeg -y -f lavfi -i "testsrc=duration=5:size=640x1138:rate=30" \
+  -f lavfi -i "sine=frequency=440:duration=5" \
+  -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest /tmp/ace-test/sample.mp4
+
+# Run the full pipeline in mock mode (no API keys)
+python3 tests/e2e_mock.py
 ```
 
-See `docs/SLACK_SETUP.md` for the 5-min Slack app setup.
-See `docs/RUNBOOK.md` for the full demo script.
+That prints a generated brief, mocks Dilani uploading 3 clips, processes them into
+5 platform outputs each, mocks 👍 reactions, and writes a posting schedule.
+
+For real-Slack mode, see `docs/SLACK_SETUP.md` and `docs/RUNBOOK.md`.
 
 ## Docs
 - [Channel plan](docs/CHANNEL_PLAN.md) — what we're building this for
