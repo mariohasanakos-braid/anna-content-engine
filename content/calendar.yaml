@@ -29,7 +29,8 @@ topics:
   - There's a name for the thing moms do that nobody sees, and once you have it, you can't unsee it.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: what-dilani-stopped-doing
   type: pure-dilani
   theme: Three things I stopped doing this year and the family is fine
@@ -50,7 +51,8 @@ topics:
   - Your partner isn't being lazy. They literally can't see it. Here's why.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: first-hour-of-the-day
   type: pure-dilani
   theme: What my first hour used to be vs. now
@@ -73,7 +75,8 @@ topics:
     grocery order placed.'
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: school-emails-triage
   type: agent-demo
   theme: The 40 school emails a week problem
@@ -84,7 +87,8 @@ topics:
   b_roll: Anna-agent UI showing email inbox, items being sorted into noise/task/action-taken columns.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: flight-checkin-5am
   type: agent-demo
   theme: The 5 AM flight check-in
@@ -95,7 +99,8 @@ topics:
   b_roll: Anna-agent UI showing flight app, auto-filling seat preference, confirmation.
   priority: medium
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: pickup-chain-rescue
   type: agent-demo
   theme: The day the soccer schedule changed at 2 PM
@@ -119,7 +124,8 @@ topics:
   b_roll: Stitch of the Mac minis video (5 sec). Then Dilani's reaction.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: react-day-in-life
   type: reaction
   theme: React to a 'day in the life of a working mom' video
@@ -139,7 +145,8 @@ topics:
   - This is the most common misunderstanding about AI for parents. Let me fix it.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: what-is-agentic-parenting
   type: avatar-explainer
   theme: What is agentic parenting?
@@ -149,7 +156,8 @@ topics:
   - There's a new word in parenting this year. Agentic parenting. Let me explain.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
 - id: generative-vs-agentic
   type: avatar-explainer
   theme: Generative vs agentic AI, explained for moms
@@ -168,4 +176,5 @@ topics:
   - Is agentic AI safe for family admin? Let me answer the question you actually care about.
   priority: high
   status: active
-  used_on: []
+  used_on:
+  - '2026-04-16'
