@@ -1,0 +1,171 @@
+cadence:
+  mon: pure-dilani
+  tue: agent-demo
+  wed: reaction
+  thu: agent-demo
+  fri: avatar-explainer
+  sat: rest
+  sun: rest
+delivery_context:
+  setting: Dilani's actual kitchen, iPhone front camera, morning window light. Casual outfit (cardigan, t-shirt). Not studio.
+  audience: Working mums 28-45, mid-tech-literacy, feeling the mental load of family admin. They've heard of ChatGPT but rarely
+    use it.
+  voice: Warm, slightly wry, direct. Like a friend who figured something out and is telling you before you have to work it
+    out yourself. No corporate tone. No toxic positivity. Never says 'game-changer' or 'life hack'.
+  dont_say:
+  - Anna
+  - em_dashes
+  - game-changer
+  - life hack
+  - so I tried this...
+  - let's dive in
+topics:
+- id: mental-load-origin
+  type: pure-dilani
+  theme: Why I started thinking about agentic parenting
+  angle: Dilani's personal story — the moment she realised family admin was a workload problem, not a time-management problem.
+  hook_options:
+  - I didn't know how much mental work my brain was doing until I tried to explain it to my partner.
+  - There's a name for the thing moms do that nobody sees, and once you have it, you can't unsee it.
+  priority: high
+  status: active
+  used_on: []
+- id: what-dilani-stopped-doing
+  type: pure-dilani
+  theme: Three things I stopped doing this year and the family is fine
+  angle: Dilani lists three specific invisible-work tasks she decided to stop owning and what happened. Not a productivity
+    hack — a permission-slip for other mums.
+  hook_options:
+  - I stopped managing the birthday party RSVPs for my kids. The world did not end.
+  - Three things I just... stopped doing. And everyone lived.
+  priority: medium
+  status: active
+  used_on: []
+- id: partner-doesnt-see-it
+  type: pure-dilani
+  theme: Why your partner doesn't see the mental load
+  angle: Honest, not blamey take on why the invisible work is genuinely invisible to the person not doing it. Sets up an agentic
+    parenting frame as the solution that doesn't require fixing your partner.
+  hook_options:
+  - Your partner isn't being lazy. They literally can't see it. Here's why.
+  priority: high
+  status: active
+  used_on: []
+- id: first-hour-of-the-day
+  type: pure-dilani
+  theme: What my first hour used to be vs. now
+  angle: Contrast Dilani's 'before' morning routine (decision-heavy, frantic) with 'after' (three decisions, all approvals,
+    everything else handled). Subtly product-adjacent without naming anything.
+  hook_options:
+  - First hour of my day used to involve 28 decisions. Now it's 3. Here's what changed.
+  priority: medium
+  status: active
+  used_on: []
+- id: sunday-brain-dump
+  type: agent-demo
+  theme: Sunday-night planning session
+  angle: 'Dilani says ''my brain is full of this week'' → cuts to Anna-agent UI reading 5 school emails, filling a permission
+    slip, rebooking carpool, drafting grocery order → cuts back to Dilani: ''Four minutes. Would have been 45.'''
+  hook_options:
+  - My Sunday brain dump was killing me. Watch this.
+  - The Sunday-night mental checklist just got automated. Look.
+  b_roll: 'Remotion Anna-agent chat UI. 3 action cards check off in sequence: permission slip signed, carpool message sent,
+    grocery order placed.'
+  priority: high
+  status: active
+  used_on: []
+- id: school-emails-triage
+  type: agent-demo
+  theme: The 40 school emails a week problem
+  angle: 'Dilani shows her actual inbox (blurred), says ''40 of these a week and 2 are actually tasks'' → cuts to Anna-agent
+    triaging them, extracting the tasks, handling what it can → back to Dilani: ''I only see the 2 things that need me.'''
+  hook_options:
+  - I get 40 school emails a week. 2 are actually tasks. Here's what handles the rest.
+  b_roll: Anna-agent UI showing email inbox, items being sorted into noise/task/action-taken columns.
+  priority: high
+  status: active
+  used_on: []
+- id: flight-checkin-5am
+  type: agent-demo
+  theme: The 5 AM flight check-in
+  angle: 'Dilani says ''I haven''t set an alarm for a flight check-in in six months'' → cuts to Anna-agent doing the check-in
+    at 5 AM while Dilani is asleep → back to Dilani: ''That is agentic parenting.'''
+  hook_options:
+  - I have not set a 5 AM flight check-in alarm in six months.
+  b_roll: Anna-agent UI showing flight app, auto-filling seat preference, confirmation.
+  priority: medium
+  status: active
+  used_on: []
+- id: pickup-chain-rescue
+  type: agent-demo
+  theme: The day the soccer schedule changed at 2 PM
+  angle: 'Dilani describes the ''soccer moved to Wednesday at 2 PM, I''m in a meeting at 3'' scenario → Anna rebooks the carpool
+    with the other parent, messages grandma, updates the calendar → Dilani: ''I learned about all of it when I opened the
+    approval.'''
+  hook_options:
+  - Soccer got moved. I was in a meeting. Here's what my phone did while I was in there.
+  b_roll: Anna-agent UI showing three messages being sent, calendar updating, approval card appearing.
+  priority: medium
+  status: active
+  used_on: []
+- id: react-mac-minis
+  type: reaction
+  theme: React to the '20 Mac minis running my life' video
+  angle: 'Dilani reacts to someone running their business on 20 Mac minis with AI agents. Frame: tech people do this for their
+    businesses; parents are doing the same job with 20 unread school emails. The tools exist — parents are next.'
+  hook_options:
+  - This person runs her business on 20 Mac minis. Parents are running their family on 20 unread school emails. One of those
+    is going to change.
+  b_roll: Stitch of the Mac minis video (5 sec). Then Dilani's reaction.
+  priority: high
+  status: active
+  used_on: []
+- id: react-day-in-life
+  type: reaction
+  theme: React to a 'day in the life of a working mom' video
+  angle: Pick a viral 'working mom morning' video. Dilani's reaction focuses on the 3-4 moments in it where 'agentic parenting'
+    would have collapsed 20 min of admin into 2. Not critical of the creator — supportive.
+  hook_options:
+  - Agentic parenting would have saved her 45 minutes of this morning. Let me show you where.
+  priority: medium
+  status: active
+  used_on: []
+- id: react-ai-skeptic
+  type: reaction
+  theme: React to an AI-sceptic parenting post
+  angle: 'Someone says ''AI for parents? No thank you, I don''t want a robot raising my kids.'' Dilani''s generous reaction:
+    ''Nobody does. That''s not what this is.'' Clarifies the parenting/admin distinction.'
+  hook_options:
+  - This is the most common misunderstanding about AI for parents. Let me fix it.
+  priority: high
+  status: active
+  used_on: []
+- id: what-is-agentic-parenting
+  type: avatar-explainer
+  theme: What is agentic parenting?
+  angle: 'Maya (the AI character, clearly labeled) delivers the canonical explainer from the blog pillar. 40s. Hook: ''There''s
+    a new word in parenting this year — let me explain.'' This is the one we already generated — use it as the template.'
+  hook_options:
+  - There's a new word in parenting this year. Agentic parenting. Let me explain.
+  priority: high
+  status: active
+  used_on: []
+- id: generative-vs-agentic
+  type: avatar-explainer
+  theme: Generative vs agentic AI, explained for moms
+  angle: Maya contrasts 'AI gives you advice' (generative) with 'AI does the thing' (agentic) using family examples.
+  hook_options:
+  - ChatGPT gave you a meal plan. Agentic AI orders the groceries. That's the difference.
+  priority: medium
+  status: active
+  used_on: []
+- id: safety-and-privacy
+  type: avatar-explainer
+  theme: Is agentic parenting safe? What about privacy?
+  angle: 'Maya addresses the real concern head-on. Answers: it''s opt-in per action, data is encrypted, the AI proposes and
+    you approve on anything meaningful. No AI is messaging your kids'' teacher without your nod.'
+  hook_options:
+  - Is agentic AI safe for family admin? Let me answer the question you actually care about.
+  priority: high
+  status: active
+  used_on: []
