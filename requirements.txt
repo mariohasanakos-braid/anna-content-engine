@@ -1,0 +1,21 @@
+# Core
+anthropic>=0.40.0
+slack-sdk>=3.33.0
+
+# Content calendar + config
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# CLI
+click>=8.1
+
+# Media processing (clip processor)
+openai-whisper>=20240930
+ffmpeg-python>=0.2.0
+
+# HTTP
+httpx>=0.27
+requests>=2.31
+
+# Dev
+rich>=13.7
